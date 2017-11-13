@@ -10,5 +10,5 @@
    顶层对象     js   window对象
                 nodejs  global对象
 
-
+nodejs中文文档地址：http://nodejs.cn/api/globals.html#globals_filename
 
