@@ -5,10 +5,14 @@
 /*
 * Buffer的方法或者属性
 *
-* Buffer.length 长度/ Buffer[index] 索引位置的内容 /
-* buf.write(string[, offset[, length]][, encoding]) string要写入的字符串，offset为buffer的偏移量，length为要写入字符串的长度
-* toString()方法
-* toJSON()方法
+*  属性：
+*  file1.txt. Buffer.length 长度/
+*  2. Buffer[index] 索引位置的内容 /
+*
+*  常用方法：
+*  file1.txt. Buffer.write(string[, offset[, length]][, encoding]) string要写入的字符串，offset为buffer的偏移量，length为要写入字符串的长度
+*  2. Buffer.toString()方法
+*  3. Buffer.toJSON()方法
 * */
 var str = 'maiov';
 var bf = Buffer.allocUnsafe(5);
@@ -16,7 +20,7 @@ var bf = Buffer.allocUnsafe(5);
 //console.log(bf[0]);
 bf.write(str);
 console.log(bf);
-//bf.write(str,1);
+//bf.write(str,file1.txt);
 bf.write(str,1,3);
 console.log(bf);
 console.log(bf.toString());

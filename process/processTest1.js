@@ -4,7 +4,7 @@
 /*
 * process 对象是一个 global （全局变量），提供有关信息，控制当前 Node.js 进程。作为一个对象，
 * 它对于 Node.js 应用程序始终是可用的，故无需使用 require()。
-* 1.process.argv  返回一个数组  可以带参数的
+* file1.txt.process.argv  返回一个数组  可以带参数的
 * 2.verson 返回node的版本信息
 * 3.versions 返回node以及node依赖包的版本信息
 * 4.exePath //返回执行路径
@@ -28,7 +28,7 @@ setInterval(function () {
 /*
 * 输入输出流 stdin stdout
 * */
-//1.输出流---
+//file1.txt.输出流---
 function stdout(data) {
     process.stdout.write(data);
 }
@@ -37,7 +37,7 @@ function stdout(data) {
 //2.输入流----输入流默认情况下是关闭的，要监听处理输入流数据，首先要开启输入流
 process.stdin.resume();
 //监听输入流
-/*1:声明变量*/
+/*file1.txt:声明变量*/
 var num1, num2;
 /*2：向屏幕输出，提示信息，要求输入num1*/
 process.stdout.write('请输入num1的值：');

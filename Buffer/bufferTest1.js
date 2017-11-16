@@ -23,7 +23,7 @@ for(var i=0;i<bf1.length;i++){
 
 
 
-//方式2   Buffer.from(array)  /  Buffer.from(arrayBuffer[, byteOffset[, length]])  /Buffer.from(buffer) /Buffer.from(string[, encoding])
+//方式2   Buffer.from(array)  /  Buffer.from(arrayBuffer[, byteOffset[, length]])  /Buffer.from(Buffer) /Buffer.from(string[, encoding])
 var  buf = Buffer.from(['aa','a','b']);
 console.log(buf);
 const buf4 = Buffer.from('this is a test');
