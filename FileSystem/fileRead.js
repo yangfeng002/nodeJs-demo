@@ -13,12 +13,27 @@
               length :是一个整数，指定要读取的字节数。
               position :指定从文件中开始读取的位置。 如果 position 为 null，则数据从当前文件读取位置开始读取，且文件读取位置会被更新。 如果 position 为一个整数，则文件读取位置保持不变。
               callback:回调有三个参数 (err, bytesRead, buffer)。
+
+           2.fs.readFileSync(path[, options])  同步读取
    *
    *
     * */
    var fs = require('fs');
    fs.open('file1.txt','r',function (err,fd) {
+        if(err){
+           console.log("文件读取失败的原因："+err);
+        }else{
+           //执行文件读取
+            var bf = Buffer.alloc(10);
+            console.log(bf);
+           fs.read(fd,bf,0,4,null,function (err, bytesRead, buffer) {
+               console.log(bf);
+               console.log(err);
+               console.log(bytesRead);
+               console.log(buffer);
+           })
 
+        }
 
 
    });
